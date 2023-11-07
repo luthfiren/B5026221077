@@ -1,0 +1,75 @@
+body { 
+    background-color: rgb(39, 46, 49);
+    color: white;
+    font-family:  sans-serif;
+}
+
+.luthfi-icon {
+     margin-top: 95px;
+    width: 96px;
+    height: 96px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%; 
+
+  
+}
+
+h1{ 
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+h1 , h2  { 
+    text-align: center;
+
+}
+h2{ 
+    font-size: 19;
+    margin-bottom: 40px;
+}
+
+.luthfi-display { 
+    width: 680px;
+    margin: auto;
+    
+}
+.container { 
+   width: 100%;
+    min-height: 56px;
+    background-color: white;
+    margin: 18px auto ;
+    display: flex; 
+    border-radius: 12px; 
+    transition: transform .4s;
+   
+}
+
+.container:hover { 
+    transform: scale(1.1) ;
+}
+p{ 
+    color: black;
+    text-align: center;  
+    margin: auto; 
+   
+}
+
+a { 
+    text-decoration: none;
+}
+
+
+.luthfi-logo { 
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    align-items:center; 
+    margin: auto 3px 
+} 
+
+
