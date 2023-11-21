@@ -7,14 +7,11 @@
 
 	<h1>Tutorial Laravel</h1>
 	<a href="https://www.malasngoding.com/category/laravel">www.malasngoding.com</a>
-    <p>nama : {( $nama )}</p>
-    <p>alamat : {( $alamat )}</p>
-    <p>umur {( $umur )}</p>
-    public function biodata(){
-    	$nama = "Diki Alfarabi Hadi";
-        $alamat = "surabaya";
-        $umur= 18 ;
-    	return view('biodata',['nama' => $nama , 'alamat' => $alamat,'umur' => $umur]);
-    }
+ <p>
+    Nama : {{ $nama }} <br>
+    Alamat : {{ $alamat }} <br>
+    Umur : {{ $umur }}
+ </p>
+ <a href="showjam/{{date('G:i:s')}}">Klik disini</a>
 </body>
 </html>
