@@ -124,6 +124,21 @@ public function cari(Request $request)
 
 	}
 
+    public function view($id){
+        // Ambil data pegawai dari database berdasarkan ID
+        $pegawai = DB::table('pegawai')->where('pegawai_id', $id)->first();
+
+        // Periksa apakah pegawai ditemukan
+        if ($pegawai) {
+            // Return view dengan data pegawai
+            return view('view', ['pegawai' => $pegawai]);
+        } else {
+            // Handle jika pegawai tidak ditemukan, misalnya tampilkan pesan error atau redirect
+            return redirect('/pegawai')->with('error', 'Pegawai tidak ditemukan');
+        }
+    }
+
+
 
 
 

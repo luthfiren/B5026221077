@@ -251,8 +251,48 @@ label {
 }
 
 .bt:hover{
-    color: red;
+    color: rgb(249, 249, 53);
 }
+/* Section 6 - Assigment */
+#section6 {
+    background-color: #f0f0f0;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.text2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 2em;
+    color: #333333;
+}
+
+.tugas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.bt {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bt:hover {
+    background-color: #0056b3;
+}
+
+/* Add more styles as needed to make your buttons visually appealing */
+
 
 
 

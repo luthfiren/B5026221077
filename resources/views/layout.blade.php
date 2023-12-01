@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-5">
                 <div class="col-12 p-0">
-                    <img class="mb-n5" src="./Background-image.png" height=100vh alt="">
+                    <img class="mb-n5" src="./Background-image.png" height=100% alt="">
                 </div>
             </div>
 

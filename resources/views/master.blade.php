@@ -11,33 +11,42 @@
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <!-- Brand -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">5026221077</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
 
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
-      </a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
-      </div>
-    </li>
-  </ul>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          tugas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/linktree">tugas 1</a>
+          <a class="dropdown-item" href="/layout">tugas 2</a>
+          <a class="dropdown-item" href="/welcome">ETS</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Materi
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/htmlpart1">materi 1</a>
+          <a class="dropdown-item" href="/htmlpart2">materi 2</a>
+          <a class="dropdown-item" href="/htmlpart3">materi 3</a>
+          <a class="dropdown-item" href="/responsive">materi 4</a>
+          <a class="dropdown-item" href="/replace">materi 5</a>
+          <a class="dropdown-item" href="/testmath">materi 6</a>
+          <a class="dropdown-item" href="/validation">materi 7</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </nav>
+
 <br>
 
 <div class="container">

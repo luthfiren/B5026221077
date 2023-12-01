@@ -289,7 +289,7 @@
     </div>
   </section>
 <Section id="section6">
-    <p class="text2">Assigment</p>
+    <p class="text2">Assignment</p>
     <div class="tugas">
 
    <a href="http://127.0.0.1:8000/linktree"><button class="bt"> linktree </button></a>

@@ -1,28 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
+@extends('master')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+@section('title', 'Tambah Pegawai')
 
-	<a href="/pegawai"> Kembali</a>
-
-	<br/>
-	<br/>
-
-	<form action="/pegawai/store" method="post">
-		{{ csrf_field() }}
-		Nama <input type="text" name="nama"> <br/>
-		Jabatan <input type="text" name="jabatan"> <br/>
-		Umur <input type="number" name="umur"> <br/>
-		Alamat <textarea name="alamat"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
-
-
-
-</body>
-</html>
+@section('konten')
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Tambah Pegawai Baru</h2>
+        </div>
+        <div class="card-body">
+            <form action="/pegawai/store" method="post">
+                {{ csrf_field() }}
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-3 col-form-label">Nama:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="nama" name="nama" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="jabatan" class="col-sm-3 col-form-label">Jabatan:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="jabatan" name="jabatan" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="umur" class="col-sm-3 col-form-label">Umur:</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" id="umur" name="umur" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="alamat" class="col-sm-3 col-form-label">Alamat:</label>
+                    <div class="col-sm-9">
+                        <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-9 offset-sm-3">
+                        <button type="submit" class="btn btn-primary">Simpan Data</button>
+                        <a href="/pegawai" class="btn btn-secondary ml-2">Kembali</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@endsection
