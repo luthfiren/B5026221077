@@ -10,12 +10,12 @@ class KeranjangController extends Controller
     public function indexkeranjangbelanja()
     {
         $keranjangbelanja = DB::table('keranjangbelanja')->get();
-        return view('/indexkeranjangbelanja', ['keranjangbelanja' => $keranjangbelanja]);
+        return view('keranjangbelanja/indexkeranjangbelanja', ['keranjangbelanja' => $keranjangbelanja]);
     }
 
     public function beli()
     {
-        return view('/beli');
+        return view('keranjangbelanja/beli');
     }
 
     public function store(Request $request)

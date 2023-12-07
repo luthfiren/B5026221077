@@ -1,6 +1,6 @@
-@extends('master')
+@extends('keranjangbelanja/master')
 
-@section('title', 'Data Pegawai')
+@section('title', 'keranjang belanja')
 
 @section('konten')
 

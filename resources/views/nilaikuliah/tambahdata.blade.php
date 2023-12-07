@@ -1,4 +1,4 @@
-@extends("master")
+@extends("nilaikuliah/master")
 
 @section("title", "Tambah Data Nilai")
 

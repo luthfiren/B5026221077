@@ -1,6 +1,6 @@
-@extends("master")
+@extends("nilaikuliah/master")
 
-@section("title", "Data Nilai")
+@section("title", "nilai kuliah")
 
 @section("konten")
 

@@ -33,7 +33,7 @@ class NilaiKuliahController extends Controller
         }
 
     	// mengirim data pegawai ke view index
-		return view('nilaikuliah',['nilai' => $nilai]);
+		return view('nilaikuliah/nilaikuliah',['nilai' => $nilai]);
 
 	}
 
@@ -42,7 +42,7 @@ class NilaiKuliahController extends Controller
 	{
 
 		// memanggil view tambah
-		return view('tambahdata');
+		return view('nilaikuliah/tambahdata');
 
 	}
 

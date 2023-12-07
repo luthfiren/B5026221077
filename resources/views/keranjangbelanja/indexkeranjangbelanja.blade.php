@@ -1,4 +1,4 @@
-@extends('master')
+@extends('keranjangbelanja/master')
 
 @section('title','Keranjang Belanja')
 
