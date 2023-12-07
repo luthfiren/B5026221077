@@ -64,3 +64,13 @@ Route::post('pegawai/update', 'App\Http\Controllers\DosenController@update');
 Route::get('pegawai/hapus/{id}', 'App\Http\Controllers\DosenController@hapus');
 Route::get('/pegawai/cari','App\Http\Controllers\DosenController@cari');
 
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
+Route::get('/nilaikuliah/tambahdata','App\Http\Controllers\NilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@indexkeranjangbelanja');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
+Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\KeranjangController@batal');
+
