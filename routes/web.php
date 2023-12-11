@@ -85,3 +85,13 @@ Route::post('beras/update', 'App\Http\Controllers\BerasController@update');
 Route::get('beras/hapus/{id}', 'App\Http\Controllers\BerasController@hapus');
 Route::get('/beras/cari','App\Http\Controllers\BerasController@cari');
 Route::get('beras/view/{id}', 'App\Http\Controllers\BerasController@view');
+
+
+
+// routes/web.php
+
+Route::group(['namespace' => 'App\Http\Controllers'], function(){
+
+    Route::get('/chat', 'PesanController@index');
+
+});
